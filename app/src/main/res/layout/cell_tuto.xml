@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ttf="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e1e1e1"
+    android:padding="5dip">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:paddingBottom="5dip"
+        ttf:cardPreventCornerOverlap="false"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dip">
+
+            <ImageView
+                android:id="@+id/element_liste_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:adjustViewBounds="true"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                tools:src="@mipmap/ic_launcher" />
+
+            <com.hamdroid.StudentGuide.views.textview.TypefacedTextView
+                android:id="@+id/element_liste_titre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/element_liste_image"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="5dip"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                ttf:typeface="RobotoSlab-Light.ttf" />
+
+            <com.hamdroid.StudentGuide.views.textview.TypefacedTextView
+                android:id="@+id/element_liste_sous_titre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/element_liste_titre"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="5dip"
+                android:ellipsize="end"
+                android:onClick="callFunction"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                ttf:typeface="sans"
+
+
+                />
+
+            `
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
